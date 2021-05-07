@@ -39,7 +39,7 @@ def get_dates():
     
     # Get earliest date available on IEX side
     date_today = datetime.today().date()
-    IEX_date = date_today - timedelta(days = 120) # 30 trailing calendar days acc. to IEX docu
+    IEX_date = date_today - timedelta(days = 150) # 30 trailing calendar days acc. to IEX docu
     print(IEX_date,'iex_date')
     # Get last date for which download was done to get start date
     try:
